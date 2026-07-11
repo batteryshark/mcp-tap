@@ -1,0 +1,46 @@
+{
+  "name": "sandals",
+  "category": "travel",
+  "description": "Luxury travel concierge for Sandals and Beaches Resorts: search resorts, check room availability and flexible dates, browse restaurant menus, and track prices with Discord alerts.",
+  "version": "2.0.0",
+  "runtime": "python>=3.12",
+  "transport": "stdio",
+  "launch": {
+    "command": "uv",
+    "args": ["run", "server"],
+    "cwd": "."
+  },
+  "auth": "env",
+  "env": [
+    {
+      "name": "DISCORD_WEBHOOK_URL",
+      "required": false,
+      "secret": true,
+      "description": "Discord webhook URL for price-drop notifications. Price-watch tools run but stay silent until this is set."
+    },
+    {
+      "name": "PORT",
+      "required": false,
+      "secret": false,
+      "description": "If set, serve over streamable-http on this port instead of stdio."
+    },
+    {
+      "name": "HOST",
+      "required": false,
+      "secret": false,
+      "description": "Bind host for the HTTP transport. Defaults to 127.0.0.1."
+    }
+  ],
+  "tools": {
+    "count": 13,
+    "search": "none"
+  },
+  "resources": {
+    "count": 1
+  },
+  "prompts": {
+    "count": 1
+  },
+  "companion_skills": [],
+  "tags": ["travel", "concierge", "hospitality", "price-monitoring"]
+}
