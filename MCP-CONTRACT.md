@@ -67,7 +67,7 @@ from fastmcp.server.providers.skills import SkillProvider
 mcp.add_provider(SkillProvider(Path(__file__).parent / "skills"))
 ```
 
-Portable, standalone skills belong in [skills-tap](https://github.com/batteryshark/skills-tap), not inside a server. Cross-reference them with the `companion_skills` field; do not copy them in.
+Portable, standalone skills belong in [skill-tap](https://github.com/batteryshark/skill-tap), not inside a server. Cross-reference them with the `companion_skills` field; do not copy them in.
 
 ## Portability
 
