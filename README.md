@@ -1,6 +1,6 @@
 # MCP Tap
 
-![MCP Tap — a retro comic-book mascot](assets/mcp-tap.png)
+![MCP Tap — a retro comic-book mascot](assets/mcp-tap-480.png)
 
 MCP Tap is a public registry of portable, self-describing [Model Context Protocol](https://modelcontextprotocol.io) servers. It is the sibling of [Skills Tap](https://github.com/batteryshark/skills-tap): where Skills Tap dispenses *knowledge* you copy, MCP Tap dispenses *capability* you connect to. Each server carries a `server.json` manifest so an agent knows how to launch it, what it needs, and what it exposes — before it ever connects.
 
